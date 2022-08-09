@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 
-import layoutContainer from './components/layoutContainer';
+import layoutContainer from './components/LayoutContainer';
 
 // -- DESENHO DO GRID --
 //logo header 
