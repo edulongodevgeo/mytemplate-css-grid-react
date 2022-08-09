@@ -1,25 +1,28 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 
+import layoutContainer from './components/layoutContainer';
+
+// -- DESENHO DO GRID --
+//logo header 
+//nav content 
+//footer
+
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+<div className='container'>
+<div class="container">
+		<nav id="nav">nav</nav>
+		<main id="main">main</main>
+		<div id="sidebar">sidebar
+		<layoutContainer />
+		</div>
+		<div id="content-1">content-1</div>
+		<div id="content-2">content-2</div>
+		<div id="footer">footer</div>
+	</div>
+</div>
+    );
 }
 
 export default App;
