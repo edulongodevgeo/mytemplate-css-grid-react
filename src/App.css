@@ -14,37 +14,43 @@ html, body {
     "sidebar content-2 content-1"
     "footer footer footer";
     gap: 5px;
-  
   }
   
   #nav{
-    background-color: red;
-    grid-area: nav
+    /* background-color: red; */
+    grid-area: nav;
+    border: 5px solid black;
   }
   
   #main{
-    background-color: blue;
+    /* background-color: blue; */
     grid-area: main;
+    border: 5px solid black;
   }
   
   #sidebar{
-    background-color: yellowgreen;
+    /*background-color: yellowgreen;*/
     grid-area: sidebar;
+    border: 5px solid black;
+
   }
   
   #content-1{
-    background-color: pink;
+    /* background-color: pink; */
     grid-area: content-1;
+    border: 5px solid black;
   }
   
   #content-2{
-    background-color: yellow;
+    /* background-color: yellow; */
     grid-area: content-2;
+    border: 5px solid black;
   }
   
   #footer{
-    background-color: orange;
+    /* background-color: orange; */
     grid-area: footer;
+    border: 5px solid black;
   }
   
   @media only screen and (max-width: 640px) {

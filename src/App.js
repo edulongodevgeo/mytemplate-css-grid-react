@@ -1,7 +1,11 @@
 import React from 'react';
 import './App.css';
-
-import layoutContainer from './components/LayoutContainer';
+import Navbar from './components/Navbar';
+import Sidebar from './components/Sidebar';
+import Main from './components/Main';
+import Footer from './components/Footer';
+import Content_01 from './components/Content_01';
+import Content_02 from './components/Content_02';
 
 // -- DESENHO DO GRID --
 //logo header 
@@ -12,14 +16,36 @@ function App() {
     return (
 <div className='container'>
 <div class="container">
-		<nav id="nav">nav</nav>
-		<main id="main">main</main>
-		<div id="sidebar">sidebar
-		<layoutContainer />
+		<nav id="nav">
+		<>
+			<Navbar />
+		</>
+		</nav>
+		<main id="main">
+		<>
+			<Main />
+		</>
+		</main>
+		<div id="sidebar">
+		<>
+			<Sidebar />
+		</>	
 		</div>
-		<div id="content-1">content-1</div>
-		<div id="content-2">content-2</div>
-		<div id="footer">footer</div>
+		<div id="content-1">
+		<>
+			<Content_01 />
+		</>
+		</div>
+		<div id="content-2">
+		<>
+			<Content_02 />
+		</>
+		</div>
+		<div id="footer">
+		<>
+			<Footer />
+		</>
+		</div>
 	</div>
 </div>
     );
